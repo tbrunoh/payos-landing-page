@@ -1,0 +1,44 @@
+name: Deploy Next.js to Azure Static Web Apps
+
+on:
+  push:
+    branches:
+      - main1 # or your production branch
+  pull_request:
+    branches:
+      - main1 # or your production branch
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # or your node version
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Next.js app
+        run: npm run build
+
+      - name: Ensure favicon exists
+        run: |
+          if [ -f "public/favicon.ico" ] && [ ! -f "out/favicon.ico" ]; then
+            cp public/favicon.ico out/
+          fi
+
+      - name: Deploy to Azure Static Web Apps
+        uses: azure/static-web-apps-deploy@latest
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          repo_token: ${{ secrets.GH_TOKEN }} # Used for GitHub integrations (e.g., PR comments)
+          action: "upload"
+          app_location: "." # Location of your Next.js project
+          api_location: "api" # Location of your API (if you have one)
+          output_location: "out" # Location of your Next.js build output
