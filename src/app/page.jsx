@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-
 function MainComponent() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -21,11 +20,7 @@ function MainComponent() {
         href="https://ucarecdn.com/15fe1d81-9f29-41fb-bdfe-810a4baf0f48/-/format/auto/"
       />
       <nav
-        className={`fixed w-full z-50 transition-all duration-300 ${
-          isScrolled
-            ? "bg-white/90 backdrop-blur-sm border-b border-[#dadce0]"
-            : ""
-        }`}
+        className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? "bg-white/90 backdrop-blur-sm border-b border-[#dadce0]" : ""}`}
       >
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center">
@@ -94,7 +89,7 @@ function MainComponent() {
             </p>
             <p className="text-lg text-[#5f6368] mb-12 max-w-4xl mx-auto">
               Accept payments across Africa and expand into MENA, the UK, the
-              EU, and North America using one platform.
+              EU, North America and APAC using one platform.
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center">
               <button className="px-8 py-4 rounded-lg bg-[#1a73e8] text-white hover:bg-[#1557b0] transition-all text-lg">
@@ -184,9 +179,9 @@ function MainComponent() {
           </div>
           <div className="text-center text-lg text-[#5f6368]">
             <p>
-              Whether you are a startup in Nairobi or a scale-up reaching MENA,
-              the UK, the EU, or North America, Pay OS gives you the tools to
-              move money like never before.
+              Whether you're a startup in Nairobi or a scale-up expanding into
+              MENA, the UK, the EU, North America or APAC, Pay OS gives you the
+              tools to move money like never before.
             </p>
           </div>
         </div>
@@ -278,8 +273,8 @@ function MainComponent() {
               </p>
               <p className="text-white">
                 → Launch digital banks, payment apps, or crypto platforms with
-                one stack. Reach customers in MENA, the UK, the EU, and North
-                America using the same infrastructure.
+                one stack. Reach customers in MENA, the UK, the EU, North
+                America and APAC using the same infrastructure.
               </p>
             </div>
             <div className="p-8 rounded-[16px] bg-[#0D652D] shadow-lg hover:-translate-y-1 transition-all">
@@ -447,7 +442,7 @@ function MainComponent() {
               across Africa, we bring together deep experience in fintech,
               compliance, and developer ecosystems. Pay OS empowers businesses
               to grow across Africa and scale into global markets including
-              MENA, the UK, the EU, and North America.
+              MENA, the UK, the EU, North America and APAC.
             </p>
           </div>
         </div>
@@ -532,13 +527,6 @@ function MainComponent() {
         </div>
       </footer>
 
-      <script
-        src="https://platform.linkedin.com/badges/js/profile.js"
-        async
-        defer
-        type="text/javascript"
-      ></script>
-
       <style jsx global>{`
         @keyframes fadeIn {
           from { opacity: 0; transform: translateY(20px); }
@@ -558,4 +546,5 @@ function MainComponent() {
   );
 }
 
-export default MainComponent;
+
+
