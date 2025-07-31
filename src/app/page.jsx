@@ -1,9 +1,8 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-function MainComponent() {
+export default function Page() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,7 +16,7 @@ function MainComponent() {
     <div className="min-h-screen bg-[#ffffff] text-[#202124] font-inter">
       <link
         rel="icon"
-        href="https://ucarecdn.com/15fe1d81-9f29-41fb-bdfe-810a4baf0f48/-/format/auto/"
+        href="/icon.avif"
       />
       <nav
         className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? "bg-white/90 backdrop-blur-sm border-b border-[#dadce0]" : ""}`}
@@ -25,7 +24,7 @@ function MainComponent() {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center">
             <img
-              src="https://ucarecdn.com/15fe1d81-9f29-41fb-bdfe-810a4baf0f48/-/format/auto/"
+              src="/logo.avif"
               alt="Pay OS Logo"
               className="h-32"
             />
