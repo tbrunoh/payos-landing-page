@@ -4,7 +4,13 @@ It is a [Next.js](https://nextjs.org/) project built on React and TailwindCSS.
 
 ## Getting Started
 
-First, run the development server:
+First, install the project dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev

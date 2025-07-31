@@ -527,6 +527,13 @@ function MainComponent() {
         </div>
       </footer>
 
+      <script
+        src="https://platform.linkedin.com/badges/js/profile.js"
+        async
+        defer
+        type="text/javascript"
+      ></script>
+
       <style jsx global>{`
         @keyframes fadeIn {
           from { opacity: 0; transform: translateY(20px); }
@@ -545,6 +552,3 @@ function MainComponent() {
     </div>
   );
 }
-
-
-
