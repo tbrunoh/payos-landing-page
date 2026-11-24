@@ -1,34 +1,26 @@
-This project was generated from [create.xyz](https://create.xyz/).
+# PayOS
 
-It is a [Next.js](https://nextjs.org/) project built on React and TailwindCSS.
+> One integration, pan-African reach: the website for PayOS, a payments layer that unifies Africa's fragmented payment rails.
 
-## Getting Started
+## What it does
 
-First, install the project dependencies:
+Explains the product to businesses and developers. Africa's payment landscape differs by country in channels, currencies and compliance. PayOS brings mobile money such as M-Pesa, MoMo and Airtel Money, bank transfers and real time rails behind one integration.
+
+## Quickstart
 
 ```bash
+git clone https://github.com/tbrunoh/payos-landing-page.git
+cd payos-landing-page
 npm install
-```
-
-Then, run the development server:
-
-```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Pushes to `main` deploy to Azure Static Web Apps through GitHub Actions.
 
-You can start editing the code in `src`. The page auto-updates as you edit the file.
+## Stack
 
-To learn more, take a look at the following resources:
+Next.js, React, Tailwind CSS.
 
-- [React Documentation](https://react.dev/) - learn about React
-- [TailwindCSS Documentation](https://tailwindcss.com/) - learn about TailwindCSS
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
+
+<sub>Maintained by <a href="https://github.com/tbrunoh">Tom Bruno</a>.</sub>
